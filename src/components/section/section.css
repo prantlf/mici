@@ -1,0 +1,53 @@
+:host {
+  --card-back-color: #f8f8f8;
+  --card-fore-color: #111;
+  --card-border-color: #ddd;
+
+  display: block;
+}
+
+:host([nopadding]) {
+  padding: 0;
+}
+
+:host-context(mici-card[variant=warning]) {
+  --card-back-color: #ffca28;
+  --card-border-color: #e8b825;
+}
+
+:host-context(mici-card[variant=error]) {
+  --card-back-color: #b71c1c;
+  --card-fore-color: #f8f8f8;
+  --card-border-color: #a71a1a;
+}
+
+:host-context(mici-card) {
+  background: var(--card-back-color);
+  color: var(--card-fore-color);
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 0.0625rem solid var(--card-border-color);
+  padding: var(--universal-padding);
+  width: 100%;
+}
+
+:host-context(mici-card):host([media]) {
+  height: 200px;
+  padding: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+:host-context(mici-card):host(:last-child) {
+  border-bottom: 0;
+}
+
+:host-context(mici-card):host([dark]) {
+  --card-back-color: #e0e0e0;
+}
+
+:host-context(mici-card):host([double-padded]) {
+  padding: calc(1.5 * var(--universal-padding));
+}

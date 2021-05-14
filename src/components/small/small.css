@@ -1,0 +1,10 @@
+:host {
+  font-size: 0.75em;
+}
+
+:host-context(mici-h1), :host-context(mici-h2), :host-context(mici-h3),
+:host-context(mici-h4), :host-context(mici-h5), :host-context(mici-h6) {
+  color: var(--secondary-fore-color);
+  display: block;
+  margin-top: -0.25rem;
+}

@@ -1,0 +1,8 @@
+:host {
+  display: block;
+  line-height: 1.2;
+  margin: calc(1.5 * var(--universal-margin)) var(--universal-margin);
+  font-weight: 500;
+
+  font-size: calc(1rem * var(--heading-ratio));
+}

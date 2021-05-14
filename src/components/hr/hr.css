@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  box-sizing: content-box;
+  border: 0;
+  line-height: 1.25em;
+  margin: var(--universal-margin);
+  height: 0.0625rem;
+  background: linear-gradient(to right, transparent, var(--border-color) 20%, var(--border-color) 80%, transparent);
+}

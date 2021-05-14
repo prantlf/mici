@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  margin: var(--universal-margin);
+}
+
+:host([nomargin]) {
+  margin: 0;
+}
+
+:host([inverse]) {
+  background: #111;
+  color: #f8f8f8;
+  padding: 0.5rem;
+}

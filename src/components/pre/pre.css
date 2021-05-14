@@ -1,0 +1,16 @@
+:host {
+  --pre-color: #1565c0;
+
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.85em;
+
+  display: block;
+  white-space: pre;
+  overflow: auto;
+  background: var(--secondary-back-color);
+  padding: calc(1.5 * var(--universal-padding));
+  margin: var(--universal-margin);
+  border: 0.0625rem solid var(--secondary-border-color);
+  border-left: 0.25rem solid var(--pre-color);
+  border-radius: 0 var(--universal-border-radius) var(--universal-border-radius) 0;
+}

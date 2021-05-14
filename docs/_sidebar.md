@@ -1,0 +1,17 @@
+- [Home](/)
+
+- Components
+  - [Common textual elements](/components/typography)
+  - [Headings](/components/headings)
+  - [Code & quotations](/components/code-quotes)
+  - [Cards](/components/cards)
+  - [Card sections](/components/sections)
+  - [Buttons](/components/buttons)
+  - [Header](/components/header)
+  - [Navigation bar](/components/navigation)
+  - [Footer](/components/footer)
+  - [Text highlighting](/components/highlighting)
+  - [Toasts](/components/toasts)
+  - [Tooltips](/components/tooltips)
+  - [Donut spinners](/components/spinners)
+  - [Icons](/components/icons)

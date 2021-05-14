@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <title>Button</title>
+</head>
+
+<body>
+  <h1>Button</h1>
+
+  <h2>Standard</h2>
+  <button>Test</button>
+  <button disabled>Disabled</button>
+  <button hidden>Hidden</button>
+
+  <h2>Custom</h2>
+  <mici-button>Test</mici-button>
+  <mici-button disabled>Disabled</mici-button>
+  <mici-button hidden>Hidden</mici-button>
+  <mici-button kind=primary>Primary</mici-button>
+  <mici-button kind=secondary>Secondary</mici-button>
+  <mici-button kind=tertiary>Tertiary</mici-button>
+  <mici-button kind=inverse>Inverse</mici-button>
+  <mici-button size=small>Small</mici-button>
+  <mici-button size=large>Large</mici-button>
+
+  <script type=module src=../../../dist/index.min.js></script>
+  <script>
+    for (el of document.querySelectorAll('button,mici-button'))
+      el.addEventListener('click', e => console.log(e.type, e.target.localName, e))
+  </script>
+</body>
+</html>

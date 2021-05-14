@@ -1,0 +1,18 @@
+:host {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.125em;
+  background-size: contain;
+  margin: 0 calc(var(--universal-margin) / 4);
+}
+
+:host([kind=secondary]) {
+  -webkit-filter: invert(25%);
+  filter: invert(25%);
+}
+
+:host([kind=inverse]) {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}

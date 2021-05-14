@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  background: var(--footer-back-color);
+  color: var(--footer-fore-color);
+  border-top: 0.0625rem solid var(--footer-border-color);
+  padding: calc(2 * var(--universal-padding)) var(--universal-padding);
+  font-size: 0.875rem;
+}
+
+:host([sticky]) {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1101;
+  bottom: 0;
+}

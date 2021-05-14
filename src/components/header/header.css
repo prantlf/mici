@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  height: 3.1875rem;
+  background: var(--header-back-color);
+  color: var(--header-fore-color);
+  border-bottom: 0.0625rem solid var(--header-border-color);
+  padding: calc(var(--universal-padding) / 4) 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+:host([sticky]) {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1101;
+  top: 0;
+}

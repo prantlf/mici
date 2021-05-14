@@ -1,0 +1,62 @@
+{
+  "name": "mici",
+  "version": "0.0.1",
+  "description": "Lightweight web components using the mini.css styles.",
+  "homepage": "https://github.com/prantlf/mici#readme",
+  "author": {
+    "name": "Ferdinand Prantl",
+    "email": "prantlf@gmail.com",
+    "url": "http://prantl.tk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prantlf/mici.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prantlf/mici/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/prantlf/mici/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "node scripts/prepare && esburu",
+    "types": "node scripts/types",
+    "index": "node scripts/index",
+    "icons": "node scripts/icons",
+    "build": "esburu",
+    "watch": "esburu -w",
+    "pretest": "esburu",
+    "test": "teru -R source-map-support/register 'src/**/*.test.js'",
+    "start": "python -m SimpleHTTPServer"
+  },
+  "devDependencies": {
+    "@prantlf/dom-lite": "^21.3.0",
+    "bacom": "^0.4.0",
+    "esbuild": "^0.12.1",
+    "esburu": "^0.1.0",
+    "feather-icons": "^4.28.0",
+    "source-map-support": "^0.5.19",
+    "tehanu": "^0.0.3",
+    "tehanu-repo-coco": "^0.0.2",
+    "tehanu-teru": "^0.1.1",
+    "typescript": "^4.2.4"
+  },
+  "keywords": [
+    "web-components",
+    "custom-elements",
+    "mini.css"
+  ]
+}

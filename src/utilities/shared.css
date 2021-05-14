@@ -1,0 +1,107 @@
+:host {
+  --fore-color: #111;
+  --secondary-fore-color: #444;
+  --back-color: #f8f8f8;
+  --secondary-back-color: #f0f0f0;
+  --border-color: #aaa;
+  --secondary-border-color: #ddd;
+  --heading-ratio: 1.19;
+  --universal-margin: 0.5rem;
+  --universal-padding: 0.5rem;
+  --universal-border-radius: 0.125rem;
+  --header-back-color: #f8f8f8;
+  --header-hover-back-color: #f0f0f0;
+  --header-fore-color: #444;
+  --header-border-color: #ddd;
+  --footer-fore-color: #444;
+  --footer-back-color: #f8f8f8;
+  --footer-border-color: #ddd;
+  --footer-link-color: #0277bd;
+  --button-back-color: #e2e2e2;
+  --button-hover-back-color: #dcdcdc;
+  --button-fore-color: #212121;
+  --button-border-color: transparent;
+  --button-hover-border-color: transparent;
+  --button-group-border-color: rgba(124, 124, 124, 0.54);
+  --nav-back-color: #f8f8f8;
+  --nav-hover-back-color: #f0f0f0;
+  --nav-fore-color: #444;
+  --nav-border-color: #ddd;
+  --nav-link-color: #0277bd;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+
+  font-size: 1rem;
+}
+
+:host([tooltip]) {
+  --tooltip-back-color: #212121;
+  --tooltip-fore-color: #fafafa;
+  --tooltip-z-index: 1010;
+
+  position: relative;
+  display: inline-block;
+}
+
+:host([tooltip]):before, :host([tooltip]):after {
+  position: absolute;
+  opacity: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  transition: all 0.3s;
+  z-index: var(--tooltip-z-index);
+  left: 50%;
+}
+
+:host([tooltip]:not([tooltip=bottom])):before,
+:host([tooltip]:not([tooltip=bottom])):after {
+  bottom: 75%;
+}
+
+:host([tooltip=bottom]):before, :host([tooltip=bottom]):after {
+  top: 75%;
+}
+
+:host([tooltip]:hover):before, :host([tooltip]:hover):after,
+:host([tooltip]:focus):before, :host([tooltip]:focus):after {
+  opacity: 1;
+  clip: auto;
+  -webkit-clip-path: inset(0%);
+  clip-path: inset(0%);
+}
+
+:host([tooltip]):before {
+  content: '';
+  background: transparent;
+  border: var(--universal-margin) solid transparent;
+  left: calc(50% - var(--universal-margin));
+}
+
+:host([tooltip]:not([tooltip=bottom])):before {
+  border-top-color: #212121;
+}
+
+:host([tooltip=bottom]):before {
+  border-bottom-color: #212121;
+}
+
+:host([tooltip]):after {
+  content: attr(aria-label);
+  color: var(--tooltip-fore-color);
+  background: var(--tooltip-back-color);
+  border-radius: var(--universal-border-radius);
+  padding: var(--universal-padding);
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+:host([tooltip]:not([tooltip=bottom])):after {
+  margin-bottom: calc(2 * var(--universal-margin));
+}
+
+:host([tooltip=bottom]):after {
+  margin-top: calc(2 * var(--universal-margin));
+}

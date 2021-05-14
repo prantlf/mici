@@ -1,0 +1,37 @@
+:host {
+  font-size: 1em;
+}
+
+:host-context(mici-nav) {
+  padding: var(--universal-padding) calc(1.5 * var(--universal-padding));
+}
+
+:host-context(mici-nav):host([sublink-1]) {
+  position: relative;
+  margin-left: calc(2 * var(--universal-padding));
+}
+
+:host-context(mici-nav):host([sublink-1]):before {
+  position: absolute;
+  left: calc(var(--universal-padding) - 1 * var(--universal-padding));
+  top: -0.0625rem;
+  content: '';
+  height: 100%;
+  border: 0.0625rem solid var(--nav-border-color);
+  border-left: 0;
+}
+
+:host-context(mici-nav):host([sublink-2]) {
+  position: relative;
+  margin-left: calc(4 * var(--universal-padding));
+}
+
+:host-context(mici-nav):host([sublink-2]):before {
+  position: absolute;
+  left: calc(var(--universal-padding) - 3 * var(--universal-padding));
+  top: -0.0625rem;
+  content: '';
+  height: 100%;
+  border: 0.0625rem solid var(--nav-border-color);
+  border-left: 0;
+}

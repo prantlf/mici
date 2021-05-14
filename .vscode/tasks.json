@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "pretest",
+			"type": "process",
+			"command": "${workspaceFolder}/node_modules/.bin/esburu",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "watch",
+			"type": "process",
+			"command": "${workspaceFolder}/node_modules/.bin/esburu",
+      "args": [
+        "-w"
+      ],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

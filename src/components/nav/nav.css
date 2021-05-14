@@ -1,0 +1,8 @@
+:host {
+  display: block;
+  background: var(--nav-back-color);
+  color: var(--nav-fore-color);
+  border: 0.0625rem solid var(--nav-border-color);
+  border-radius: var(--universal-border-radius);
+  margin: var(--universal-margin);
+}

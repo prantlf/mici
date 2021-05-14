@@ -1,0 +1,101 @@
+:host {
+  -webkit-appearance: button;
+
+  overflow: visible;
+  text-transform: none;
+
+  display: inline-block;
+  background: var(--button-back-color);
+  color: var(--button-fore-color);
+  border: 0.0625rem solid var(--button-border-color);
+  border-radius: var(--universal-border-radius);
+  padding: var(--universal-padding) calc(1.5 * var(--universal-padding));
+  margin: var(--universal-margin);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+:host(::-moz-focus-inner) {
+  border-style: none;
+  padding: 0;
+}
+
+:host(:hover), :host(:focus) {
+  background: var(--button-hover-back-color);
+  border-color: var(--button-hover-border-color);
+}
+
+:host([disabled]) {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+:host([hidden]) {
+  display: none;
+}
+
+:host([kind=primary]) {
+  --button-back-color: #1976d2;
+  --button-fore-color: #f8f8f8;
+}
+
+:host([kind=primary]:hover) {
+  --button-hover-back-color: #1565c0;
+}
+
+:host([kind=secondary]) {
+  --button-back-color: #d32f2f;
+  --button-fore-color: #f8f8f8;
+}
+
+:host([kind=secondary]:hover) {
+  --button-hover-back-color: #c62828;
+}
+
+:host([kind=tertiary]) {
+  --button-back-color: #308732;
+  --button-fore-color: #f8f8f8;
+}
+
+:host([kind=tertiary]:hover) {
+  --button-hover-back-color: #277529;
+}
+
+:host([kind=inverse]) {
+  --button-back-color: #212121;
+  --button-fore-color: #f8f8f8;
+}
+
+:host([kind=inverse]:hover) {
+  --button-hover-back-color: #111;
+}
+
+:host([size=small]) {
+  padding: calc(0.5 * var(--universal-padding)) calc(0.75 * var(--universal-padding));
+  margin: var(--universal-margin);
+}
+
+:host([size=large]) {
+  padding: calc(1.5 * var(--universal-padding)) calc(2 * var(--universal-padding));
+  margin: var(--universal-margin);
+}
+
+:host-context(mici-header) {
+  box-sizing: border-box;
+  position: relative;
+  top: calc(0rem - var(--universal-padding) / 4);
+  height: calc(3.1875rem + var(--universal-padding) / 2);
+  background: var(--header-back-color);
+  line-height: calc(3.1875rem - var(--universal-padding) * 1.5);
+  text-align: center;
+  color: var(--header-fore-color);
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+:host-context(mici-header):host(:hover) {
+  background: var(--header-hover-back-color);
+}

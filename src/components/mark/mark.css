@@ -1,0 +1,31 @@
+:host {
+  --mark-back-color: #0277bd;
+  --mark-fore-color: #fafafa;
+
+  background: var(--mark-back-color);
+  color: var(--mark-fore-color);
+  font-size: 0.95em;
+  line-height: 1em;
+  border-radius: var(--universal-border-radius);
+  padding: calc(var(--universal-padding) / 4) calc(var(--universal-padding) / 2);
+}
+
+:host([block]) {
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: calc(var(--universal-padding) / 2) var(--universal-padding);
+}
+
+:host([kind=secondary]) {
+  --mark-back-color: #d32f2f;
+}
+
+:host([kind=tertiary]) {
+  --mark-back-color: #308732;
+}
+
+:host([tag]) {
+  padding: calc(var(--universal-padding)/2) var(--universal-padding);
+  border-radius: 1em;
+}

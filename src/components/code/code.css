@@ -1,0 +1,12 @@
+:host {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.85em;
+
+  background: var(--secondary-back-color);
+  border-radius: var(--universal-border-radius);
+  padding: calc(var(--universal-padding) / 4) calc(var(--universal-padding) / 2);
+
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}

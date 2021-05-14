@@ -1,0 +1,14 @@
+:host {
+  --toast-back-color: #424242;
+  --toast-fore-color: #fafafa;
+
+  position: fixed;
+  bottom: calc(var(--universal-margin) * 3);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1111;
+  color: var(--toast-fore-color);
+  background: var(--toast-back-color);
+  border-radius: calc(var(--universal-border-radius) * 16);
+  padding: var(--universal-padding) calc(var(--universal-padding) * 3);
+}
