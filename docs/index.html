@@ -5,12 +5,12 @@
   <title>Mini Web Components</title>
   <meta name=description content="Lightweight web components using the mini.css styles. The same look & feel for your embedded widgets on any page. Workhorse for functional web applications, not for fancy web pages.">
   <meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel=manifest href=/manifest.webmanifest>
-  <link rel=icon href=/assets/media/mici.ico>
-  <link rel=icon href=/assets/media/mici.svg type=image/svg+xml>
-  <link rel=apple-touch-icon href=/assets/media/mici-180.png>
+  <link rel=manifest href=manifest.webmanifest>
+  <link rel=icon href=assets/media/mici.ico>
+  <link rel=icon href=assets/media/mici.svg type=image/svg+xml>
+  <link rel=apple-touch-icon href=assets/media/mici-180.png>
   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css>
-  <link rel=stylesheet href=/assets/plugins/code-block/code-block.css>
+  <link rel=stylesheet href=assets/plugins/code-block/code-block.css>
   <!--link rel=stylesheet href=/dist/icons-base.min.css-->
   <link rel=stylesheet href=https://unpkg.com/mici@0.0.1/dist/icons-base.min.css>
   <style>
@@ -25,7 +25,7 @@
   <meta property=og:site_name content="Mini Web Components">
   <meta property=og:title content="Mini Web Components">
   <meta property=og:description content="Lightweight web components using the mini.css styles. The same look & feel for your embedded widgets on any page. Workhorse for functional web applications, not for fancy web pages.">
-  <meta property=og:image content=https://prantlf.github.io/mici/mici-512.png>
+  <meta property=og:image content=https://prantlf.github.io/mici/assets/media/mici-512.png>
   <meta property=og:image:type content=image/png>
   <meta property=og:image:width content=512>
   <meta property=og:image:height content=512>
@@ -34,9 +34,6 @@
   <div id=app></div>
   <script>
     window.$docsify = {
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      },
       auto2top: true,
       copyCode: {
         buttonText: 'Copy Code',
@@ -45,7 +42,7 @@
       },
       coverpage: true,
       executeScript: true,
-      homepage: '/overview.md',
+      homepage: 'README.md',
       loadSidebar: true,
       maxLevel: 3,
       name: 'Mini Web Components',
@@ -57,7 +54,7 @@
         crossChapterText: false
       },
       repo: 'https://github.com/prantlf/mici',
-      routerMode: location.port ? 'hash' : 'history',
+      routerMode: 'hash',
       search: {
         maxAge: 86400000,
         paths: 'auto',
@@ -70,14 +67,14 @@
       themeColor: '#049dff'
     }
   </script>
-  <script type=module src=/dist/index.min.js></script>
-  <!--script type=module src=https://unpkg.com/mici@0.0.1/dist/index.min.js></script-->
+  <!--script type=module src=/dist/index.min.js></script-->
+  <script type=module src=https://unpkg.com/mici@0.0.1/dist/index.min.js></script>
   <script src=https://cdn.jsdelivr.net/npm/docsify@4></script>
   <script src=https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js></script>
   <script src=https://cdn.jsdelivr.net/npm/docsify-copy-code@2></script>
   <script src=https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js></script>
-  <script src=/assets/plugins/code-block/code-block.js></script>
-  <script src=/assets/plugins/scroll-position/scroll-position.js></script>
-  <script src=/assets/plugins/sidebar/sidebar.js></script>
+  <script src=assets/plugins/code-block/code-block.js></script>
+  <script src=assets/plugins/scroll-position/scroll-position.js></script>
+  <script src=assets/plugins/sidebar/sidebar.js></script>
 </body>
 </html>

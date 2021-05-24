@@ -1,3 +1,5 @@
+# Mini Web Components
+
 * Small size - 20 kB minified, 4.96 kB gzipped.
 * Written in TypeScript using [bacom].
 * Fast build and tests powered by [esburu] and [tehanu].

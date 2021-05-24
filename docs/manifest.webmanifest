@@ -1,7 +1,7 @@
 {
   "name": "Mini Web Components",
   "icons": [
-    { "src": "/assets/media/mici-192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "/assets/media/mici-512.png", "type": "image/png", "sizes": "512x512" }
+    { "src": "https://prantlf.github.io/mici/assets/media/mici-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "https://prantlf.github.io/mici/assets/media/mici-512.png", "type": "image/png", "sizes": "512x512" }
   ]
 }

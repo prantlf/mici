@@ -27,7 +27,7 @@ You can create sections for media (`media`), such as images or videos (using an 
     <mici-h3>Card with image</mici-h3>
   </mici-section>
   <mici-section media>
-    <img src=../assets/media/mici-180.png style="margin: auto">
+    <img src=assets/media/mici-180.png style="margin: auto">
   </mici-section>
 </mici-card>
 ```
